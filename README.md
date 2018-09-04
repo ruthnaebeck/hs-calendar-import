@@ -1,5 +1,5 @@
 # Hearthstone Calendar Import
-Used to add events to hearthstonecalendar.com
+Add events to hearthstonecalendar.com with Python & Selenium
 
 - Rename `secrets.py.example` to `secrets.py` and fill in the relevant info
 
