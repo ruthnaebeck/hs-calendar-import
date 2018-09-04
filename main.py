@@ -63,7 +63,9 @@ with open('events.csv', newline='') as csvfile:
             print('Event added normally!')
 
         except NoSuchElementException:
+            # Sometimes the Source Button isn't found right away
             WebDriverWait(driver, 10)
+            sourceBtn = driver.find_element_by_id('cke_67')
             fillForm(next(reader))
             saveBtn.click()
             print('Event added after waiting longer!')
